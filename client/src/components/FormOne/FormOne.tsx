@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { SyncOutlined } from "@ant-design/icons";
 import TimePicker from "@mui/lab/TimePicker";
-import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import DateFnsUtils from "@material-ui/pickers/adapter/date-fns";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -57,8 +57,7 @@ const FormOne = ({ person }: IProps) => {
 
     return (
         <>
-            {/* <LocalizationProvider dateAdapter={AdapterDateFns}> */}
-            <LocalizationProvider dateAdapter={null}>
+            <LocalizationProvider dateAdapter={DateFnsUtils}>
                 <Container>
                     <div className="  p-20 rounded-md shadow-2xl">
                         <div className="text-center  pb-20">
