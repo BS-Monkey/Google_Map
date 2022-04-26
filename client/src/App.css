@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+}
+
+#map{
+  position: relative;
+  width: 100%;
+}
+
+#visitcard {
+  position: absolute;
+  width: 200px;
+  /* maxWidth: 290; */
+  right: -12rem;
+  top: 140px;
+}
+ #listcard, #personcard {
+  position: absolute;
+  width: 310px;
+  /* maxWidth: 290; */
+  right: 0;
+  top: 0px;
+}
+
+#visitcard {
+  width: 400px;
+}
+
+#selectcard {
+  position: absolute;
+  width: 400px;
+  /* maxWidth: 290; */
+  right: 8px;
+  top: 139px;
+}
+
+#selectbtn {
+  position: absolute;
+  top: 10px;
+  right: 8px;
+  width: 200px;
+
+}
+
+#persons {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+  overflow: hidden;
+}
+
+#persons .person-slider > .MuiBox-root {
+
+  border-radius: 8px;
+  padding: 20px;
+}
+
+#persons .person-slider > .MuiBox-root.messaged {
+  background: #33ff006b;
+}
+
+#persons .person-slider{
+  width: 300px!important;
+  padding-inline: 10px;
+}
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-out {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(100%); }
+}
+
+@keyframes slide-in {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(0%); }
+}
+
+.person-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person-modal .MuiCard-root {
+  max-width: 300px;
+  margin: auto;
+}

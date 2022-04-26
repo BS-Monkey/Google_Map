@@ -1,0 +1,74 @@
+.section {
+    background-color: #f4f7fa;
+  }
+  
+  .inputGroup {
+    height: 50%;
+    width: 200%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    color: black;
+  }
+  .inputLabel {
+    text-align: left;
+  }
+  .inputField {
+    height: 42px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0.375rem;
+    @apply border border-accent-2 p-2 text-accent-5 bg-white;
+  }
+  
+  .textField {
+    height: 300px;
+    width: 100%;
+    border-radius: 0.375rem;
+    @apply  border-accent-2 p-2 text-accent-5 bg-white focus:outline-none focus:bg-white focus:border-gray-500;
+  }
+
+
+  .main {
+    padding: 5rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .selection {
+    font-size: 10px;
+  }
+  
+  .MainForm {
+    padding: 60px;
+    border-radius: 5px;
+  
+    width: 400px;
+    box-shadow: 0 25px 25px rgb(0 0 0 / 0.15);
+    background-color: white;
+  }
+  
+  .ButtonField {
+    margin-top: 20px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 0.375rem;
+  }
+  
+  .ButtonField:hover {
+    color: white;
+    background-color: black;
+  }
+  
+
+  .locationCard {
+    background-color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 0.375rem;
+
+
+  }
